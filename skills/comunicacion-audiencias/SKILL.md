@@ -55,7 +55,21 @@ técnica innecesaria. Un buen análisis mal comunicado no cambia ninguna decisi�
 
 ## Nota de método y límites
 [fuentes, supuestos, qué no se puede afirmar]
+
+## RESULTADO
+status: OK | WARN | BLOCKED | ERROR
+risk: LOW | MEDIUM | HIGH | CRITICAL
+skill_applied: true | false
+summary: [1-2 frases — el titular del informe para quien decide]
+artifacts: [informe, cuadro de mando de KPIs, recomendaciones priorizadas]
+next: [normalmente terminal: entregar al destinatario / o acción concreta]
 ```
+
+**Criterios propios de comunicación** (resto en `Result_Contract_TechAcces.md`):
+- `BLOCKED` — datos de entrada insuficientes o contradictorios para un informe fiable.
+- `CRITICAL` — el informe afirmaría algo no sostenido por los datos (no emitir).
+- `WARN`/`MEDIUM` — informe entregado con celdas N/D (sin periodo anterior o sin benchmark del sector), señaladas en la nota de límites.
+- Al ser la skill terminal, `next` suele ser la entrega; el orquestador usa `status` solo para cerrar el caso.
 
 ---
 
@@ -65,4 +79,5 @@ técnica innecesaria. Un buen análisis mal comunicado no cambia ninguna decisi�
 
 ---
 
-*comunicacion-audiencias v1.0 · prueba de concepto · 04/06/2026*
+*comunicacion-audiencias v1.1 · 08/06/2026 — Result Contract: bloque `## RESULTADO` añadido (handoff parseable por el orquestador).*
+*v1.0 · prueba de concepto · 04/06/2026*

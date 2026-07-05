@@ -38,7 +38,10 @@ cambio de etiquetado).
 - **Nulos y huecos temporales** (¿faltan días? ¿cambió el tracking a mitad de periodo?).
 - **Cambios de medición:** una caída/subida brusca puede ser un cambio de etiquetado o de
   consent mode, no un cambio real de audiencia. Verificar antes de interpretar.
-- **Tráfico no humano:** picos anómalos pueden ser bots/referral spam. Marcar como sospechoso.
+- **Tráfico no humano:** picos anómalos pueden ser bots/referral spam. Para todo pico anómalo:
+  1. Calcular sesiones netas estimadas (sesiones del día pico − media del canal en días normales). Citar el neto, no solo el bruto.
+  2. Verificar si hay conversiones antes de clasificar. Un bot tiene conv = 0 Y bounce ≥ 0,95 Y duración ≤ 5s. Si al menos una condición no se cumple, es tráfico real (ver §10 del RAG).
+  3. Si la firma es inequívoca (bot), marcar como CRÍTICO. Si hay conversiones, señalar como evento/campaña real con métricas sospechosas.
 - **Coherencia de canales:** que las fuentes/medios estén bien clasificados.
 - Señalar explícitamente los problemas que invalidan el análisis antes de seguir.
 
@@ -54,7 +57,11 @@ Tendencia, estacionalidad (semana, mes), efecto de campañas o publicaciones, pi
 ¿Nuevo vs recurrente se comportan distinto?
 
 ### CAPA 6 — Anomalías e hipótesis
-Distinguir outlier legítimo (campaña viral real) de error de datos (bot) de evento puntual.
+Para cada anomalía, clasificar explícitamente usando la tabla del §10 del RAG:
+- **Bot confirmado:** bounce ≥ 0,95 Y dur ≤ 5s Y conv = 0 → etiquetar CRÍTICO, excluir del análisis.
+- **Campaña/evento real:** al menos una condición difiere → etiquetar como tráfico real de calidad inferior al baseline. Argumentar con las conversiones (aunque sean pocas).
+- **Error de medición / tracking break:** caída simultánea ≥ 30% en todos los canales con métricas de calidad estables → no es pérdida real de audiencia.
+- **Hueco de datos:** ausencia de filas (no filas con valores bajos) → laguna de exportación; datos vuelven al nivel normal tras el hueco.
 Formular hipótesis con criterio de negocio.
 
 ---
@@ -69,7 +76,27 @@ Formular hipótesis con criterio de negocio.
 ## Hallazgos [con cifras]
 ## Hipótesis para investigar
 ## Recomendación de siguiente paso [descriptivo basta / proyectar / limpiar / falta info]
+
+## RESULTADO
+status: OK | WARN | BLOCKED | ERROR
+risk: LOW | MEDIUM | HIGH | CRITICAL
+skill_applied: true | false
+summary: [1-2 frases — el hallazgo más importante para quien decide]
+artifacts: [qué produjo este análisis: tablas, clasificaciones, alertas]
+next: [skill o acción concreta recomendada]
 ```
+
+**Criterios para `status`:**
+- `OK` — análisis completado, datos suficientes para decidir.
+- `WARN` — hay anomalías (bots, huecos, tracking break) que condicionan las conclusiones pero no las invalidan.
+- `BLOCKED` — los datos tienen problemas que impiden sacar conclusiones fiables (>30% del periodo sin datos, huecos sin resolver en canales clave, tracking break no confirmado).
+- `ERROR` — fallo técnico (fichero ilegible, export corrupto).
+
+**Criterios para `risk`:**
+- `CRITICAL` — hay un BLOCKED activo o bot no excluido que infla los KPIs.
+- `HIGH` — hay un WARN que afecta directamente a la métrica principal pedida.
+- `MEDIUM` — hay alertas secundarias; el análisis principal es válido.
+- `LOW` — datos limpios, análisis sin condicionantes.
 
 ---
 
@@ -80,4 +107,5 @@ Formular hipótesis con criterio de negocio.
 
 ---
 
-*exploracion-audiencias v1.0 · prueba de concepto · 04/06/2026*
+*exploracion-audiencias v1.3 · 06/06/2026 — Result Contract: vocabulario inglés (ALERTA→WARN, BLOQUEANTE→BLOCKED, bajo/medio/alto/crítico→LOW/MEDIUM/HIGH/CRITICAL) + campo skill_applied añadido. Marcadores internos [CRÍTICO]/[ALERTA] del análisis no cambian (texto libre).*
+*v1.2 · 06/06/2026 — Ciclo 2: RESULTADO envelope (status/risk/summary/artifacts/next)*

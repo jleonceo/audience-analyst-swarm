@@ -5,9 +5,7 @@ description: >
   de partida (objetivo de negocio sin medición, datos de audiencia sin pregunta,
   o ambos), coordina el flujo entre las skills del enjambre y decide qué etapas
   son necesarias. Usar siempre como primera skill.
-context: fork
 effort: high
-max_tokens: 2000
 ---
 
 # Skill: orquestador-audiencias
@@ -63,9 +61,23 @@ Esperar confirmación.
 
 ## PASO 4 — COORDINAR EL FLUJO
 
-- Al terminar cada skill, resumir en 2 líneas qué se obtuvo.
-- Proponer la siguiente con criterio explícito.
-- Si la exploración descriptiva ya responde la pregunta: **no escalar a previsión**.
+### Leer el bloque RESULTADO antes de proponer la siguiente etapa
+
+Cuando una skill entrega su output, buscar el bloque `## RESULTADO` y aplicar
+esta tabla de routing **antes de resumir o proponer nada**:
+
+| `status` + `risk` | Acción del orquestador |
+|---|---|
+| `OK` + `LOW` | Continuar. Resumir en 2 líneas y proponer siguiente etapa. |
+| `OK` + `MEDIUM` | Continuar, pero mencionar la advertencia al resumir. |
+| `WARN` (cualquier risk) | Mostrar el `summary` a Juan. Esperar que decida si continuar. |
+| `BLOCKED` (cualquier risk) | Parar. Mostrar el `summary` a Juan. No proponer siguiente etapa. |
+| `risk: HIGH` o `risk: CRITICAL` | Parar independientemente del status. Mostrar `summary` a Juan. |
+| `ERROR` | Parar inmediatamente. No continuar bajo ningún concepto. |
+| `skill_applied: false` | Registrarlo en el resumen. No bloquea, pero mencionarlo a Juan. |
+
+Si la skill no produce bloque `## RESULTADO`: continuar como antes (leer la
+recomendación de siguiente paso en el output).
 
 ### Activar previsión cuando:
 - Hay que proyectar tráfico/conversión a futuro.
@@ -96,4 +108,16 @@ Esperar confirmación.
 
 ---
 
-*orquestador-audiencias v1.0 · prueba de concepto · 04/06/2026*
+## CÓMO INVOCO A LOS ESPECIALISTAS
+
+Las 4 especialistas tienen `disable-model-invocation: true` **a propósito**: no deben dispararse sueltas ni en desorden. **Las conduzco yo, este orquestador, leyéndolas** — uso la herramienta **Read** sobre el `SKILL.md` de cada especialista, en el orden que marca el plan (PASO 3), y aplico sus instrucciones. No espero a que el sistema las auto-active (no puede).
+
+Rutas:
+1. Read `C:/PROYECTOS_GITHUB/TechAcces/Enjambre_Analista_Audiencias/skills/discovery-audiencias/SKILL.md`
+2. Read `.../exploracion-audiencias/SKILL.md`
+3. Read `.../prevision-audiencias/SKILL.md`
+4. Read `.../comunicacion-audiencias/SKILL.md`
+
+---
+
+*orquestador-audiencias v1.2 · 11/06/2026 — añadida sección "Cómo invoco a los especialistas" (conducción por Read; el `disable-model-invocation: true` impedía la auto-activación) y retirados `context: fork` y `max_tokens` del frontmatter (espurios, como en orquestador-analista v1.2). Antes: v1.1 (06/06) routing por bloque RESULTADO.*

@@ -75,8 +75,22 @@ Marca desde el inicio qué KPIs se nutren de **dato agregado/público** (uso lib
 
 ## Siguiente paso
 [exploración de datos / falta montar medición / falta info X]
+
+## RESULTADO
+status: OK | WARN | BLOCKED | ERROR
+risk: LOW | MEDIUM | HIGH | CRITICAL
+skill_applied: true | false
+summary: [1-2 frases — el plan de medición propuesto y su foco]
+artifacts: [KPIs definidos, plan de etiquetado, segmentos a vigilar]
+next: [skill o acción concreta recomendada]
 ```
+
+**Criterios propios de discovery** (resto en `Result_Contract_TechAcces.md`):
+- `BLOCKED` — el objetivo no es medible con los medios/datos disponibles (p.ej. brand awareness sin presupuesto de encuestas).
+- `CRITICAL` — ningún KPI puede anclarse a fuente, o el KPI principal exige dato personal sin consentimiento.
+- `WARN`/`MEDIUM` — objetivo definido pero falta histórico propio o benchmark del sector en el RAG → targets provisionales.
 
 ---
 
-*discovery-audiencias v1.0 · prueba de concepto · 04/06/2026*
+*discovery-audiencias v1.1 · 08/06/2026 — Result Contract: bloque `## RESULTADO` añadido (handoff parseable por el orquestador).*
+*v1.0 · prueba de concepto · 04/06/2026*

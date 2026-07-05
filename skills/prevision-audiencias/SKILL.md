@@ -55,7 +55,20 @@ Si la respuesta no acompaña: **no proyectar**; decirlo y volver a exploración 
 ## Resultado [rango con escenarios / segmentos accionables]
 ## Nivel de confianza [alto/medio/bajo + por qué]
 ## Limitaciones [qué no se puede afirmar con estos datos]
+
+## RESULTADO
+status: OK | WARN | BLOCKED | ERROR
+risk: LOW | MEDIUM | HIGH | CRITICAL
+skill_applied: true | false
+summary: [1-2 frases — qué se proyectó/segmentó y con qué confianza]
+artifacts: [rango de escenarios / segmentos accionables, supuestos]
+next: [skill o acción concreta recomendada]
 ```
+
+**Criterios propios de previsión** (resto en `Result_Contract_TechAcces.md`):
+- `BLOCKED` — datos insuficientes o serie no limpia → **no se proyecta**, se devuelve a exploración o se piden más datos (gate ANTES DE PROYECTAR).
+- `CRITICAL` — se proyectó sobre datos que no lo permiten (no debe ocurrir si se respeta el gate).
+- `WARN`/`MEDIUM` — proyección entregada pero con confianza baja (histórico justo o supuestos fuertes).
 
 ---
 
@@ -65,4 +78,5 @@ Si los datos no dan, decirlo es la respuesta correcta.
 
 ---
 
-*prevision-audiencias v1.0 · prueba de concepto · 04/06/2026*
+*prevision-audiencias v1.1 · 08/06/2026 — Result Contract: bloque `## RESULTADO` añadido (handoff parseable por el orquestador).*
+*v1.0 · prueba de concepto · 04/06/2026*
