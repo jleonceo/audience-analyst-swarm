@@ -163,4 +163,4 @@ This swarm is the same method applied to a different domain. Its sibling project
 
 ---
 
-*audience-analyst-swarm · prueba de concepto / proof of concept · 04/06/2026*
+*audience-analyst-swarm · prueba de concepto / proof of concept · 04/06/2026 · Licencia / License: [MIT](LICENSE)*
