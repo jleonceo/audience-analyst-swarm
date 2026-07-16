@@ -58,6 +58,7 @@ la línea entre dato *público/agregado* (libre) y *personal* (RGPD/ePrivacy).
 audience-analyst-swarm/
   README.md
   arquitectura.md          decisiones de diseño
+  Result_Contract.md       cómo cierra cada skill para que el orquestador la entienda
   rag/
     RAG_Metricas_Audiencias.md    métricas + benchmarks (con fuente)
   skills/                  las 5 skills (español)
@@ -135,6 +136,7 @@ line is between *public/aggregated* (free) and *personal* (GDPR/ePrivacy).
 audience-analyst-swarm/
   README.md
   arquitectura.md          design decisions
+  Result_Contract.md       how each skill signs off so the orchestrator can read it
   rag/
     RAG_Metricas_Audiencias.md    metrics + benchmarks (with source)
   skills/                  the 5 skills (in Spanish)

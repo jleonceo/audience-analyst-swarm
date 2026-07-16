@@ -65,7 +65,7 @@ artifacts: [informe, cuadro de mando de KPIs, recomendaciones priorizadas]
 next: [normalmente terminal: entregar al destinatario / o acción concreta]
 ```
 
-**Criterios propios de comunicación** (resto en `Result_Contract_TechAcces.md`):
+**Criterios propios de comunicación** (resto en `Result_Contract.md`):
 - `BLOCKED`: datos de entrada insuficientes o contradictorios para un informe fiable.
 - `CRITICAL`: el informe afirmaría algo no sostenido por los datos (no emitir).
 - `WARN`/`MEDIUM`: informe entregado con celdas N/D (sin periodo anterior o sin benchmark del sector), señaladas en la nota de límites.

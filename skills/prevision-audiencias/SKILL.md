@@ -65,7 +65,7 @@ artifacts: [rango de escenarios / segmentos accionables, supuestos]
 next: [skill o acción concreta recomendada]
 ```
 
-**Criterios propios de previsión** (resto en `Result_Contract_TechAcces.md`):
+**Criterios propios de previsión** (resto en `Result_Contract.md`):
 - `BLOCKED`: datos insuficientes o serie no limpia → **no se proyecta**, se devuelve a exploración o se piden más datos (gate ANTES DE PROYECTAR).
 - `CRITICAL`: se proyectó sobre datos que no lo permiten (no debe ocurrir si se respeta el gate).
 - `WARN`/`MEDIUM`: proyección entregada pero con confianza baja (histórico justo o supuestos fuertes).

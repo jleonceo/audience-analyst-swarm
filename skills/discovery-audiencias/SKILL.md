@@ -85,7 +85,7 @@ artifacts: [KPIs definidos, plan de etiquetado, segmentos a vigilar]
 next: [skill o acción concreta recomendada]
 ```
 
-**Criterios propios de discovery** (resto en `Result_Contract_TechAcces.md`):
+**Criterios propios de discovery** (resto en `Result_Contract.md`):
 - `BLOCKED`: el objetivo no es medible con los medios/datos disponibles (p.ej. brand awareness sin presupuesto de encuestas).
 - `CRITICAL`: ningún KPI puede anclarse a fuente, o el KPI principal exige dato personal sin consentimiento.
 - `WARN`/`MEDIUM`: objetivo definido pero falta histórico propio o benchmark del sector en el RAG → targets provisionales.
