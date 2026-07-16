@@ -1,4 +1,4 @@
-# Caso de estudio — El auge de las "skills" de IA
+# Caso de estudio: El auge de las "skills" de IA
 
 *Demostración del enjambre Analista de Audiencias sobre datos reales · 04/06/2026*
 
@@ -7,34 +7,34 @@
 ## Por qué este estudio
 
 Este repositorio es una **prueba de método**: coger una infraestructura de agentes IA ya
-validada en otros dominios y aplicarla a uno nuevo —análisis de audiencias— para responder una
+validada en otros dominios y aplicarla a uno nuevo (análisis de audiencias) para responder una
 pregunta real con datos públicos.
 
 La pregunta: **¿cuánta atención está captando el concepto de "skills" de IA, y desde cuándo?**
 Es un caso 100% de analista de audiencias (medir el interés del público por un tema) y, a la
 vez, mide algo que llevo dos meses construyendo. El caso es, en sí mismo, la prueba.
 
-> **Honestidad por delante:** entré con una hipótesis —"estuvo plano todo el año y repuntó en
-> las últimas 2 semanas"— y **los datos la corrigieron**. Lo cuento tal cual. Ese es el punto:
+> **Honestidad por delante:** entré con una hipótesis ("estuvo plano todo el año y repuntó en
+> las últimas 2 semanas") y **los datos la corrigieron**. Lo cuento tal cual. Ese es el punto:
 > en análisis, los datos mandan sobre la intuición.
 
 ---
 
 ## Cómo lo produjo el enjambre (las 5 skills en acción)
 
-### 1. `orquestador-audiencias` — diagnóstico
+### 1. `orquestador-audiencias`: diagnóstico
 Entrada: una pregunta de negocio ("¿el interés por las skills sube?") + una fuente de datos
 disponible (Google Trends). Ruta trazada: **Discovery → Exploración → Comunicación**. Sin
 previsión (la pregunta es descriptiva: "¿qué ha pasado?", no "¿qué pasará?").
 
-### 2. `discovery-audiencias` — qué medir
+### 2. `discovery-audiencias`: qué medir
 - **Objetivo:** cuantificar la atención pública al concepto de "skills" de IA y su evolución.
 - **KPI:** interés de búsqueda relativo (Google Trends, 0–100) como **proxy de atención pública**.
 - **Términos:** `Claude skills`, `agent skills`, `AI agent skills` (específicos, para evitar el ruido de "skills" = habilidades genéricas).
-- **Ventana:** 12 meses, resolución semanal — para ver la forma de la curva, no solo el final.
+- **Ventana:** 12 meses, resolución semanal, para ver la forma de la curva, no solo el final.
 - **Privacidad:** dato público y agregado. Sin datos personales. Uso libre.
 
-### 3. `exploracion-audiencias` — qué dicen los datos
+### 3. `exploracion-audiencias`: qué dicen los datos
 **Estructura:** serie semanal, 3 términos, jun-2025 a jun-2026. Fuente: Google Trends (vía `pytrends`).
 
 **Calidad:** sin huecos; valores normalizados 0–100 por diseño de Trends. Señal limpia.
@@ -51,13 +51,13 @@ previsión (la pregunta es descriptiva: "¿qué ha pasado?", no "¿qué pasará?
 | may 2026 | 78,6 | Corrección desde el pico |
 
 **Corrección de la hipótesis inicial (lo importante):**
-- ❌ No estuvo "plano todo el año": plano solo jun–sep 2025.
-- ❌ El repunte no es de "las últimas 2 semanas": la subida arranca en **oct-2025** y es una tendencia de **~8 meses**. De hecho, las últimas semanas **bajan** desde el pico de inicios de mayo.
-- ✅ Lo que sí es rotundo: el interés se multiplicó **~×80** desde el suelo. El fenómeno es real y grande.
+- No estuvo "plano todo el año": plano solo jun–sep 2025.
+- El repunte no es de "las últimas 2 semanas": la subida arranca en **oct-2025** y es una tendencia de **~8 meses**. De hecho, las últimas semanas **bajan** desde el pico de inicios de mayo.
+- Lo que sí es rotundo: el interés se multiplicó **~×80** desde el suelo. El fenómeno es real y grande.
 
 ![Curva de interés de búsqueda](grafico_tendencia_skills.png)
 
-### 4. `comunicacion-audiencias` — el informe
+### 4. `comunicacion-audiencias`: el informe
 
 > ## Titular
 > **El interés por las "skills" de IA se multiplicó por ~80 en ocho meses, impulsado por el lanzamiento de Agent Skills de Anthropic (oct-2025), con su pico en abril–mayo de 2026.**
@@ -78,7 +78,7 @@ previsión (la pregunta es descriptiva: "¿qué ha pasado?", no "¿qué pasará?
 ---
 
 ## Limitaciones (honestas)
-- **Google Trends mide interés de búsqueda**, un proxy de atención — no mide adopción real ni volumen absoluto (la escala es relativa 0–100).
+- **Google Trends mide interés de búsqueda**, un proxy de atención: no mide adopción real ni volumen absoluto (la escala es relativa 0–100).
 - La elección de términos condiciona el resultado; se eligieron los más específicos para reducir ruido.
 - Una sola fuente. Para un estudio de cliente se cruzaría con GitHub, redes y volumen de contenido.
 
@@ -86,9 +86,9 @@ previsión (la pregunta es descriptiva: "¿qué ha pasado?", no "¿qué pasará?
 Datos **públicos y agregados** (Google Trends). Sin datos personales, sin perfilado. Uso de IA sin restricción de RGPD.
 
 ## Reproducibilidad
-- `trends_skills.py` — descarga la serie (pytrends) y guarda CSV.
-- `grafico_trends.py` — genera el gráfico desde el CSV.
-- `google_trends_skills_semanal.csv` / `_mensual.csv` — datos.
+- `trends_skills.py`: descarga la serie (pytrends) y guarda CSV.
+- `grafico_trends.py`: genera el gráfico desde el CSV.
+- `google_trends_skills_semanal.csv` / `_mensual.csv`: datos.
 
 ---
 

@@ -1,4 +1,4 @@
-# RAG — Métricas y benchmarks de audiencias digitales
+# RAG: Métricas y benchmarks de audiencias digitales
 
 *Conocimiento de dominio para el enjambre · benchmarks con fuente · 04/06/2026*
 
@@ -13,7 +13,7 @@
 |---|---|---|---|
 | Engagement rate (GA4) | % de sesiones "engaged" (>10s, conversión o ≥2 páginas) | Media ~62%; rango 50–65% | Semrush / Arvo Digital (2024–25) |
 | Bounce rate | 100% − engagement rate (GA4) | Mediana ~45%; <40% excelente, >70% revisar | Databox GA4 (ago-23) / Contentsquare 2024 |
-| Duración media de sesión | Tiempo total / nº sesiones | Mediana ~2 m 38 s (todas industrias) | Databox — GA4 Industry Benchmarks |
+| Duración media de sesión | Tiempo total / nº sesiones | Mediana ~2 m 38 s (todas industrias) | Databox, GA4 Industry Benchmarks |
 | Tasa de conversión web | (Conversiones / sesiones) × 100 | 1–4% general; eCommerce ~2,2%; paid search ~2,55% | First Page Sage / Contentsquare 2024 |
 | Scroll rate | % sesiones con scroll significativo (≥90%) | ~50% (y descendiendo) | Contentsquare 2024 |
 
@@ -123,7 +123,7 @@ Citar siempre el neto, no solo el bruto del día anómalo.
 
 ---
 
-## 11. Experimentación: test A/B (imprescindible — decidir con datos, no con opinión)
+## 11. Experimentación: test A/B (imprescindible: decidir con datos, no con opinión)
 
 > Un test A/B convierte *"creemos que B es mejor"* en *"medimos que B es mejor"*. Es el **gold
 > standard** para validar un cambio en una web/landing/email (≈92% de fiabilidad causal, ver
@@ -174,7 +174,7 @@ Citar siempre el neto, no solo el bruto del día anómalo.
 ### 11.5 Variantes del método
 - **A/B:** control vs una variante. El caso por defecto.
 - **A/B/n:** varias variantes a la vez (más muestra, reparte el tráfico).
-- **Multivariante (MVT):** combinaciones de varios elementos para ver interacciones — **exige mucha
+- **Multivariante (MVT):** combinaciones de varios elementos para ver interacciones: **exige mucha
   más muestra**; solo con tráfico alto.
 - **Split URL:** dos URLs distintas (rediseños grandes), no cambios en la misma página.
 

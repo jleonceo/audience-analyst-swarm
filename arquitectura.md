@@ -1,4 +1,4 @@
-# Arquitectura — Enjambre Analista de Audiencias
+# Arquitectura: Enjambre Analista de Audiencias
 
 *Decisiones de diseño · 04/06/2026*
 
@@ -31,7 +31,7 @@ Flujo: **orquestador → discovery → exploración → (previsión si aplica) �
 
 ---
 
-## Reglas de oro — a fuego en el enjambre (no negociables)
+## Reglas de oro, a fuego en el enjambre (no negociables)
 
 1. **Datos públicos y agregados por defecto.** Trends, benchmarks de sector, conversación
    pública. No se perfila a individuos.

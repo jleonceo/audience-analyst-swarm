@@ -23,19 +23,19 @@ Un mal plan de medición lleva a medir lo que es fácil en vez de lo que importa
 ---
 
 ## RAG QUE DEBES CARGAR
-- `RAG_Metricas_Audiencias.md` — métricas por canal, benchmarks con fuente, plan de medición, etiquetado.
+- `RAG_Metricas_Audiencias.md`: métricas por canal, benchmarks con fuente, plan de medición, etiquetado.
 
 ---
 
-## PROCESO — el plan de medición (orden canónico)
+## PROCESO: el plan de medición (orden canónico)
 
-1. **Objetivo de negocio** — ¿qué quiere lograr el negocio? (captar, convertir, retener, posicionar marca).
-2. **Estrategias/tácticas** — ¿cómo piensa lograrlo? (contenido, paid, SEO, email…).
-3. **KPIs** — traducen el objetivo a algo medible. **SMART** y pocos: 5–7 por etapa, no más.
+1. **Objetivo de negocio**: ¿qué quiere lograr el negocio? (captar, convertir, retener, posicionar marca).
+2. **Estrategias/tácticas**: ¿cómo piensa lograrlo? (contenido, paid, SEO, email…).
+3. **KPIs**: traducen el objetivo a algo medible. **SMART** y pocos: 5–7 por etapa, no más.
    - Ej.: objetivo "captar clientes" → KPIs: usuarios nuevos, tasa de conversión a lead, coste por lead.
-4. **Métricas de soporte** — los data points que alimentan cada KPI (sesiones, fuentes, eventos).
-5. **Segmentos/dimensiones** — por canal, dispositivo, campaña, geografía, nuevo vs recurrente.
-6. **Targets** — valor objetivo de cada KPI, anclado en **benchmark de sector** (del RAG) + histórico propio.
+4. **Métricas de soporte**: los data points que alimentan cada KPI (sesiones, fuentes, eventos).
+5. **Segmentos/dimensiones**: por canal, dispositivo, campaña, geografía, nuevo vs recurrente.
+6. **Targets**: valor objetivo de cada KPI, anclado en **benchmark de sector** (del RAG) + histórico propio.
 
 **Regla de foco:** si propones más de 7 KPIs por etapa, sobra alguno. Prioriza los que mueven la decisión.
 
@@ -80,17 +80,17 @@ Marca desde el inicio qué KPIs se nutren de **dato agregado/público** (uso lib
 status: OK | WARN | BLOCKED | ERROR
 risk: LOW | MEDIUM | HIGH | CRITICAL
 skill_applied: true | false
-summary: [1-2 frases — el plan de medición propuesto y su foco]
+summary: [1-2 frases, el plan de medición propuesto y su foco]
 artifacts: [KPIs definidos, plan de etiquetado, segmentos a vigilar]
 next: [skill o acción concreta recomendada]
 ```
 
 **Criterios propios de discovery** (resto en `Result_Contract_TechAcces.md`):
-- `BLOCKED` — el objetivo no es medible con los medios/datos disponibles (p.ej. brand awareness sin presupuesto de encuestas).
-- `CRITICAL` — ningún KPI puede anclarse a fuente, o el KPI principal exige dato personal sin consentimiento.
-- `WARN`/`MEDIUM` — objetivo definido pero falta histórico propio o benchmark del sector en el RAG → targets provisionales.
+- `BLOCKED`: el objetivo no es medible con los medios/datos disponibles (p.ej. brand awareness sin presupuesto de encuestas).
+- `CRITICAL`: ningún KPI puede anclarse a fuente, o el KPI principal exige dato personal sin consentimiento.
+- `WARN`/`MEDIUM`: objetivo definido pero falta histórico propio o benchmark del sector en el RAG → targets provisionales.
 
 ---
 
-*discovery-audiencias v1.1 · 08/06/2026 — Result Contract: bloque `## RESULTADO` añadido (handoff parseable por el orquestador).*
+*discovery-audiencias v1.1 · 08/06/2026 · Result Contract: bloque `## RESULTADO` añadido (handoff parseable por el orquestador).*
 *v1.0 · prueba de concepto · 04/06/2026*
