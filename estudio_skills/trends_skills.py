@@ -4,8 +4,9 @@ Parte del enjambre Analista de Audiencias (caso de estudio / demo).
 Saca el interes de busqueda de los ultimos 12 meses y lo guarda en CSV.
 """
 import sys
+from pathlib import Path
 
-# SSL robusto en el entorno de Juan (si truststore esta disponible)
+# SSL robusto (si truststore esta disponible en el entorno)
 try:
     import truststore
     truststore.inject_into_ssl()
@@ -16,7 +17,10 @@ except Exception as e:
 import pandas as pd
 from pytrends.request import TrendReq
 
-OUT_DIR = r"C:\PROYECTOS_GITHUB\TechAcces\Enjambre_Analista_Audiencias\estudio_skills"
+# Salida junto al propio script: el repo es publico y debe ejecutarse en
+# cualquier maquina. Una ruta absoluta aqui acopla el codigo a un ordenador
+# concreto y publica la estructura de carpetas privada de su autor.
+OUT_DIR = str(Path(__file__).resolve().parent)
 
 # Terminos foco (comparables en magnitud: todos de nicho 'skills de IA')
 kw_list = ["Claude skills", "agent skills", "AI agent skills"]

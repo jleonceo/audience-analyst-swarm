@@ -1,0 +1,4 @@
+
+# Cache de Python: nunca al repo publico.
+__pycache__/
+*.pyc

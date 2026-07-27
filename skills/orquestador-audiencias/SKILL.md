@@ -112,11 +112,12 @@ recomendación de siguiente paso en el output).
 
 Las 4 especialistas tienen `disable-model-invocation: true` **a propósito**: no deben dispararse sueltas ni en desorden. **Las conduzco yo, este orquestador, leyéndolas**: uso la herramienta **Read** sobre el `SKILL.md` de cada especialista, en el orden que marca el plan (PASO 3), y aplico sus instrucciones. No espero a que el sistema las auto-active (no puede).
 
-Rutas:
-1. Read `C:/PROYECTOS_GITHUB/TechAcces/Enjambre_Analista_Audiencias/skills/discovery-audiencias/SKILL.md`
-2. Read `.../exploracion-audiencias/SKILL.md`
-3. Read `.../prevision-audiencias/SKILL.md`
-4. Read `.../comunicacion-audiencias/SKILL.md`
+Rutas (relativas a la raíz de este repo — no cablees rutas absolutas: el repo es
+público y debe funcionar en cualquier máquina):
+1. Read `skills/discovery-audiencias/SKILL.md`
+2. Read `skills/exploracion-audiencias/SKILL.md`
+3. Read `skills/prevision-audiencias/SKILL.md`
+4. Read `skills/comunicacion-audiencias/SKILL.md`
 
 ---
 

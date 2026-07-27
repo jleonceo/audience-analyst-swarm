@@ -7,9 +7,13 @@ matplotlib.use("Agg")  # backend sin ventana
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 import pandas as pd
+from pathlib import Path
 
-DIR = r"C:\PROYECTOS_GITHUB\TechAcces\Enjambre_Analista_Audiencias\estudio_skills"
-df = pd.read_csv(DIR + r"\google_trends_skills_semanal.csv", parse_dates=["date"], index_col="date")
+# Relativo al propio script: el repo es publico y debe ejecutarse en cualquier
+# maquina (una ruta absoluta publica ademas el arbol privado de su autor).
+DIR = Path(__file__).resolve().parent
+df = pd.read_csv(DIR / "google_trends_skills_semanal.csv",
+                 parse_dates=["date"], index_col="date")
 
 # Excluir la ultima semana: esta en curso (dato parcial) y engaña a la baja.
 df = df.iloc[:-1]
