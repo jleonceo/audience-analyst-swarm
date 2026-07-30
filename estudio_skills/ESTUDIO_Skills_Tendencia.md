@@ -44,7 +44,7 @@ previsión (la pregunta es descriptiva: "¿qué ha pasado?", no "¿qué pasará?
 | Periodo | Índice | Lectura |
 |---|---|---|
 | jun–sep 2025 | 1–2 | Plano, casi inexistente |
-| **oct 2025** | **19,8** | Primer salto (×10) — coincide con el lanzamiento de Agent Skills (16-oct-2025) |
+| **oct 2025** | **19,8** | Primer salto (×10): coincide con el lanzamiento de Agent Skills (16-oct-2025) |
 | dic 2025 | 19,8 | Segundo impulso (estándar abierto, 18-dic) |
 | ene–feb 2026 | 33,8 → 43,0 | Aceleración |
 | mar–abr 2026 | 84,4 → 88,5 | Explosión, pico |
@@ -71,9 +71,9 @@ previsión (la pregunta es descriptiva: "¿qué ha pasado?", no "¿qué pasará?
 > - "Interés de búsqueda" es un proxy de atención, no una medida directa de adopción.
 >
 > ## Recomendación
-> Para una marca/medio del sector IA: el tema tiene tracción alta pero ya madura. **El alfa de "hablar de skills" ya se consumió** — el pico de descubrimiento fue ene–abr 2026.
+> Para una marca/medio del sector IA: el tema tiene tracción alta pero ya madura. **El alfa de "hablar de skills" ya se consumió**: el pico de descubrimiento fue ene–abr 2026.
 >
-> Lo que sigue abierto es otra cosa. La adopción está **concentradísima** (el top 3 de skills acapara ~99% de la atención; el resto busca audiencia): la huella de un ecosistema con **mucho contenido superficial y poquísimo de profundidad**. Lo que escasea es el **razonamiento, la estructura y la evaluación** (evals, gobernanza) — el *cómo se construye una skill que de verdad funcione*, no el *qué es*. Ese hueco está abierto. **Ahí está el alfa que queda: no llegar antes a un tema, sino llegar más hondo.**
+> Lo que sigue abierto es otra cosa. La adopción está **concentradísima** (el top 3 de skills acapara ~99% de la atención; el resto busca audiencia): la huella de un ecosistema con **mucho contenido superficial y poquísimo de profundidad**. Lo que escasea es el **razonamiento, la estructura y la evaluación** (evals, gobernanza): el *cómo se construye una skill que de verdad funcione*, no el *qué es*. Ese hueco está abierto. **Ahí está el alfa que queda: no llegar antes a un tema, sino llegar más hondo.**
 
 ---
 

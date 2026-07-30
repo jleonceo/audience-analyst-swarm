@@ -95,7 +95,7 @@ next: Diagnóstico técnico del tracking break (auditoría de GTM/GA4) antes de 
 
 El segundo es el que enseña de verdad para qué sirve el contrato. La skill hizo su trabajo
 (`skill_applied: true`) y el análisis existe, pero una parte no se puede usar. Sin este bloque,
-el siguiente agente cogería los KPIs post-break y proyectaría sobre un dato roto, y nadie se
+el siguiente agente cogería los KPIs post-break y proyectaría sobre un dato roto. Nadie se
 enteraría hasta que la decisión ya estuviera tomada.
 
 ---

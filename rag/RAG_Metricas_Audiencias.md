@@ -136,7 +136,7 @@ Citar siempre el neto, no solo el bruto del día anómalo.
   usabilidad / usuarios simulados / FeedbackLoop + juicio del escéptico**, asumiendo que es decisión
   **cualitativa**, no medida. Nunca decretar un ganador de un test infrapotenciado.
 
-### 11.2 El método, paso a paso
+### 11.2 El método paso a paso
 1. **Hipótesis** explícita: *"Si [cambio], entonces [métrica primaria] mejora, porque [insight]."*
    Sin hipótesis no es experimento, es tocar.
 2. **UNA métrica primaria** que decide (la que mueve negocio: conversión, clics al CTA, leads) +
@@ -149,7 +149,7 @@ Citar siempre el neto, no solo el bruto del día anómalo.
 5. **Tamaño de muestra y duración fijados ANTES** (§11.3).
 6. **Leer con significancia** (§11.3) y decidir: adoptar B, quedarse con A, o iterar.
 
-### 11.3 Tamaño de muestra, significancia y duración (lo que más se hace mal)
+### 11.3 Lo que más se hace mal al dimensionar un test
 - El **tamaño de muestra NO es fijo**: depende de (a) la **tasa base** de conversión, (b) el
   **efecto mínimo detectable (MDE)** que te interesa (p. ej. +10% relativo), (c) **nivel de
   confianza** (convención **95%**, α=0,05) y (d) **potencia** (convención **80%**). Menor tasa base

@@ -112,7 +112,7 @@ recomendación de siguiente paso en el output).
 
 Las 4 especialistas tienen `disable-model-invocation: true` **a propósito**: no deben dispararse sueltas ni en desorden. **Las conduzco yo, este orquestador, leyéndolas**: uso la herramienta **Read** sobre el `SKILL.md` de cada especialista, en el orden que marca el plan (PASO 3), y aplico sus instrucciones. No espero a que el sistema las auto-active (no puede).
 
-Rutas (relativas a la raíz de este repo — no cablees rutas absolutas: el repo es
+Rutas (relativas a la raíz de este repo. No cablees rutas absolutas: el repo es
 público y debe funcionar en cualquier máquina):
 1. Read `skills/discovery-audiencias/SKILL.md`
 2. Read `skills/exploracion-audiencias/SKILL.md`
