@@ -48,19 +48,19 @@ previsión (la pregunta es descriptiva: "¿qué ha pasado?", no "¿qué pasará?
 | dic 2025 | 19,8 | Segundo impulso (estándar abierto, 18-dic) |
 | ene–feb 2026 | 33,8 → 43,0 | Aceleración |
 | mar–abr 2026 | 84,4 → 88,5 | Explosión, pico |
-| may 2026 | 78,6 | Corrección desde el pico |
+| may 2026 | 83,8 | Corrección desde el pico (sin la última semana, que estaba incompleta) |
 
 **Corrección de la hipótesis inicial (lo importante):**
 - No estuvo "plano todo el año": plano solo jun–sep 2025.
 - El repunte no es de "las últimas 2 semanas": la subida arranca en **oct-2025** y es una tendencia de **~8 meses**. De hecho, las últimas semanas **bajan** desde el pico de inicios de mayo.
-- Lo que sí es rotundo: el interés se multiplicó **~×80** desde el suelo. El fenómeno es real y grande.
+- Lo que sí es rotundo: el interés pasó de un índice de 1 a 2 a su máximo de 100. El fenómeno es real y grande. No se da un multiplicador exacto porque el punto de partida es un 1 redondeado, que puede ser cualquier valor entre 0,5 y 1,5.
 
 ![Curva de interés de búsqueda](grafico_tendencia_skills.png)
 
 ### 4. `comunicacion-audiencias`: el informe
 
 > ## Titular
-> **El interés por las "skills" de IA se multiplicó por ~80 en ocho meses, impulsado por el lanzamiento de Agent Skills de Anthropic (oct-2025), con su pico en abril–mayo de 2026.**
+> **El interés por las "skills" de IA pasó de casi cero a su máximo en ocho meses, impulsado por el lanzamiento de Agent Skills de Anthropic (oct-2025), con su pico en abril–mayo de 2026.**
 >
 > ## Qué está funcionando (señal)
 > - Despegue claro y sostenido desde oct-2025; no es ruido puntual, es tendencia estructural.
@@ -73,7 +73,7 @@ previsión (la pregunta es descriptiva: "¿qué ha pasado?", no "¿qué pasará?
 > ## Recomendación
 > Para una marca/medio del sector IA: el tema tiene tracción alta pero ya madura. **El alfa de "hablar de skills" ya se consumió**: el pico de descubrimiento fue ene–abr 2026.
 >
-> Lo que sigue abierto es otra cosa. La adopción está **concentradísima** (el top 3 de skills acapara ~99% de la atención; el resto busca audiencia): la huella de un ecosistema con **mucho contenido superficial y poquísimo de profundidad**. Lo que escasea es el **razonamiento, la estructura y la evaluación** (evals, gobernanza): el *cómo se construye una skill que de verdad funcione*, no el *qué es*. Ese hueco está abierto. **Ahí está el alfa que queda: no llegar antes a un tema, sino llegar más hondo.**
+> Lo que sigue abierto es el *cómo* se construye una skill que funcione, con evaluación y gobernanza, más que el *qué es*. Este estudio no lo mide: es una hipótesis para el siguiente análisis.
 
 ---
 

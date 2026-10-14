@@ -44,14 +44,14 @@ Flujo: **orquestador → discovery → exploración → (previsión si aplica) �
 
 ---
 
-## Qué se reutiliza (el ~70%)
+## Qué se reutiliza
 
 - Patrón de enjambre y orquestación con plan en voz alta.
 - Método de exploración por capas (estructura → calidad → distribuciones → relaciones → anomalías).
 - Criterio de cuándo escalar a previsión y cuándo no.
 - Filosofía de evals y verificación.
 
-## Qué es nuevo (el ~30%)
+## Qué es nuevo
 
 - `RAG_Metricas_Audiencias.md`: métricas y benchmarks de dominio (web, SEO, redes, email).
 - Las 5 skills especializadas en medición de audiencias.

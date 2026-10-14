@@ -43,6 +43,6 @@ fig.text(0.01, 0.01,
          "Fuente: Google Trends (interes relativo 0-100). Ultima semana en curso excluida (dato parcial).",
          fontsize=7, color="#888")
 
-out = DIR + r"\grafico_tendencia_skills.png"
+out = DIR / "grafico_tendencia_skills.png"
 fig.savefig(out, dpi=150)
 print(f"[OK] Grafico guardado: {out}")
