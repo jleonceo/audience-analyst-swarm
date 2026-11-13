@@ -25,12 +25,16 @@ puesta. Repartirlos obliga a un relevo explícito entre uno y otro. Ese relevo s
 
 ## Qué hay dentro
 
-```
-orquestador-audiencias
-   └── discovery-audiencias      qué merece la pena medir
-   └── exploracion-audiencias    qué dicen de verdad los datos que llegan
-   └── prevision-audiencias      qué pasará si esto sigue así
-   └── comunicacion-audiencias   qué se le cuenta a quien decide
+```mermaid
+flowchart TD
+    O{orquestador-audiencias<br/>propone la ruta} --> H[Human in the loop<br/>confirma]
+    H --> D[discovery<br/>qué merece la pena medir]
+    D --> E[exploración<br/>qué dicen de verdad los datos]
+    E -->|Si no basta| P[previsión<br/>qué pasará si esto sigue así]
+    E --> C[comunicación<br/>qué se cuenta a quien decide]
+    P --> C
+    style O fill:#e3f2fd,stroke:#1565c0,color:#0d47a1
+    style H fill:#e8f5e9,stroke:#2e7d32,color:#1b5e20
 ```
 
 Cada **skill** es un fichero de instrucciones que lee un modelo de lenguaje: su papel, sus pasos, lo que tiene

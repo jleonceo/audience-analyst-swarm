@@ -26,12 +26,16 @@ stopped.
 
 ## What is inside
 
-```
-orquestador-audiencias
-   └── discovery-audiencias      what is worth measuring
-   └── exploracion-audiencias    what the incoming data really says
-   └── prevision-audiencias      what happens if this keeps up
-   └── comunicacion-audiencias   what gets told to whoever decides
+```mermaid
+flowchart TD
+    O{orquestador-audiencias<br/>proposes the route} --> H[Human in the loop<br/>confirms]
+    H --> D[discovery<br/>what is worth measuring]
+    D --> E[exploration<br/>what the data really says]
+    E -->|If not enough| P[forecast<br/>what happens if this keeps up]
+    E --> C[communication<br/>what gets told to whoever decides]
+    P --> C
+    style O fill:#e3f2fd,stroke:#1565c0,color:#0d47a1
+    style H fill:#e8f5e9,stroke:#2e7d32,color:#1b5e20
 ```
 
 Each **skill** is an instruction file read by a language model: its role, its steps, what it must not do and the
