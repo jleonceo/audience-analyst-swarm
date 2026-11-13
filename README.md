@@ -21,7 +21,7 @@ Genera el gráfico del caso a partir de los datos ya descargados.
 Un pico de visitas puede ser una campaña que funciona o un robot, y una caída puede ser público que se va o una
 etiqueta de medición rota. Medir una audiencia exige cuatro trabajos: decidir qué medir, comprobar la calidad de lo
 que llega, proyectar y comunicar. Si los hace la misma persona de una sentada, llega a los datos con la conclusión
-puesta. Repartirlos obliga a un relevo explícito entre uno y otro, y ese relevo se puede frenar.
+puesta. Repartirlos obliga a un relevo explícito entre uno y otro. Ese relevo se puede frenar.
 
 ## Qué hay dentro
 
