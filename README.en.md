@@ -28,7 +28,7 @@ stopped.
 
 ```mermaid
 flowchart LR
-    O{orquestador-audiencias<br/>proposes the route} --> H[Human in<br/>the loop<br/>confirms]
+    O[orquestador-audiencias<br/>proposes the route] --> H[Human in<br/>the loop<br/>confirms]
     H --> D[discovery<br/>what is worth<br/>measuring]
     D --> E[exploration<br/>what the data<br/>really says]
     E -->|If not enough| P[forecast<br/>what happens if<br/>this keeps up]

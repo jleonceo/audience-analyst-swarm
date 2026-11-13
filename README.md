@@ -27,7 +27,7 @@ puesta. Repartirlos obliga a un relevo explícito entre uno y otro. Ese relevo s
 
 ```mermaid
 flowchart LR
-    O{orquestador-audiencias<br/>propone la ruta} --> H[Human in<br/>the loop<br/>confirma]
+    O[orquestador-audiencias<br/>propone la ruta] --> H[Human in<br/>the loop<br/>confirma]
     H --> D[discovery<br/>qué merece la<br/>pena medir]
     D --> E[exploración<br/>qué dicen de verdad<br/>los datos]
     E -->|Si no basta| P[previsión<br/>qué pasará si<br/>esto sigue así]
