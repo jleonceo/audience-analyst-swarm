@@ -26,12 +26,12 @@ puesta. Repartirlos obliga a un relevo explícito entre uno y otro. Ese relevo s
 ## Qué hay dentro
 
 ```mermaid
-flowchart TD
-    O{orquestador-audiencias<br/>propone la ruta} --> H[Human in the loop<br/>confirma]
-    H --> D[discovery<br/>qué merece la pena medir]
-    D --> E[exploración<br/>qué dicen de verdad los datos]
-    E -->|Si no basta| P[previsión<br/>qué pasará si esto sigue así]
-    E --> C[comunicación<br/>qué se cuenta a quien decide]
+flowchart LR
+    O{orquestador-audiencias<br/>propone la ruta} --> H[Human in<br/>the loop<br/>confirma]
+    H --> D[discovery<br/>qué merece la<br/>pena medir]
+    D --> E[exploración<br/>qué dicen de verdad<br/>los datos]
+    E -->|Si no basta| P[previsión<br/>qué pasará si<br/>esto sigue así]
+    E --> C[comunicación<br/>qué se cuenta<br/>a quien decide]
     P --> C
     style O fill:#e3f2fd,stroke:#1565c0,color:#0d47a1
     style H fill:#e8f5e9,stroke:#2e7d32,color:#1b5e20
